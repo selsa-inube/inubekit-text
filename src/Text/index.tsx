@@ -10,7 +10,7 @@ import { StyledText } from "./styles";
 
 export interface ITextProps {
   children?: React.ReactNode;
-  textAlign?: AlignOptions;
+  textAlign: AlignOptions;
   margin?: string;
   padding?: string;
   as?: HtmlElements;
@@ -42,16 +42,16 @@ const Text = (props: ITextProps) => {
   return (
     <StyledText
       as={as}
-      textAlign={textAlign}
-      appearance={appearance}
-      type={type}
-      size={size}
-      margin={margin}
-      padding={padding}
-      cursorHover={cursorHover}
-      parentHover={parentHover}
-      ellipsis={ellipsis}
-      disabled={disabled}
+      $textAlign={textAlign}
+      $appearance={appearance}
+      $type={type}
+      $size={size}
+      $margin={margin}
+      $padding={padding}
+      $cursorHover={cursorHover}
+      $parentHover={parentHover}
+      $ellipsis={ellipsis}
+      $disabled={disabled}
     >
       {children}
     </StyledText>
