@@ -1,3 +1,5 @@
+import { StyledText } from "./styles";
+
 import {
   AlignOptions,
   HtmlElements,
@@ -5,8 +7,6 @@ import {
   SizeOptions,
   Appearance,
 } from "./props";
-
-import { StyledText } from "./styles";
 
 export interface ITextProps {
   children?: React.ReactNode;
