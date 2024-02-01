@@ -1,3 +1,20 @@
+# v1.1.1 (Thu Feb 01 2024)
+
+#### 🐛 Bug Fix
+
+- publish new version of @inubekit text [#4](https://github.com/selsa-inube/inubekit-text/pull/4) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### ⚠️ Pushed to `main`
+
+- feat(package.json): update dist/index.d.ts to dist/index.es.d.ts (carlos3k11@gmail.com)
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Andres Babativa (carlos3k11@gmail.com)
+
+---
+
 # v1.0.1 (Thu Feb 01 2024)
 
 #### 🐛 Bug Fix
