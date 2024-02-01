@@ -1,3 +1,16 @@
+# v1.0.1 (Thu Feb 01 2024)
+
+#### 🐛 Bug Fix
+
+- change style extension to .js [#3](https://github.com/selsa-inube/inubekit-text/pull/3) ([@Andresbl123](https://github.com/Andresbl123))
+- publish `@inubekit/text` package [#2](https://github.com/selsa-inube/inubekit-text/pull/2) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 1
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+
+---
+
 # v0.0.2 (Wed Jan 31 2024)
 
 #### 🐛 Bug Fix
