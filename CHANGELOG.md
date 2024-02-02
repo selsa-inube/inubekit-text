@@ -1,3 +1,20 @@
+# v1.2.1 (Fri Feb 02 2024)
+
+#### 🐛 Bug Fix
+
+- release version with a **TypeScript** support [#5](https://github.com/selsa-inube/inubekit-text/pull/5) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### ⚠️ Pushed to `main`
+
+- build(vite.config.ts): add rollupOption (carlos3k11@gmail.com)
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Andres Babativa (carlos3k11@gmail.com)
+
+---
+
 # v1.1.1 (Thu Feb 01 2024)
 
 #### 🐛 Bug Fix
