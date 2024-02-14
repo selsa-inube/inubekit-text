@@ -10,7 +10,7 @@ import {
 
 export interface ITextProps {
   children?: React.ReactNode;
-  textAlign: AlignOptions;
+  textAlign?: AlignOptions;
   margin?: string;
   padding?: string;
   as?: HtmlElements;
