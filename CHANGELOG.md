@@ -1,3 +1,20 @@
+# v1.3.1 (Tue Feb 13 2024)
+
+#### 🐛 Bug Fix
+
+- Fix errors when implementing `@inubekit/text` [#6](https://github.com/selsa-inube/inubekit-text/pull/6) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### ⚠️ Pushed to `main`
+
+- refactor(Text): update ITextProps interface to make textAlign prop optional (carlos3k11@gmail.com)
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Andres Babativa (carlos3k11@gmail.com)
+
+---
+
 # v1.2.1 (Fri Feb 02 2024)
 
 #### 🐛 Bug Fix
