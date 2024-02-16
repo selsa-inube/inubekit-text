@@ -34,8 +34,10 @@
     "version": "rm -rf dist && npm run build",
     "postversion": "git push --follow-tags && npm run auto release"
   },
+  "dependencies": {
+    "@inubekit/foundations": "^1.1.2"
+  },
   "peerDependencies": {
-    "@inubekit/foundations": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8"
