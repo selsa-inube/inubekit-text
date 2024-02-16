@@ -1,6 +1,3 @@
-import { ThemeProvider } from "styled-components";
-import { presente } from "@inubekit/foundations";
-
 import { props, parameters } from "./props";
 import { Text, ITextProps } from ".";
 
@@ -11,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-const Default = (args: ITextProps) => {
+export const Default = (args: ITextProps) => {
   return <Text {...args}>{args.children}</Text>;
 };
 
@@ -30,18 +27,4 @@ Default.args = {
   parentHover: false,
 };
 
-const theme = {
-  ...presente,
-};
-
-const Themed = (args: ITextProps) => (
-  <ThemeProvider theme={theme}>
-    <Text {...args} />
-  </ThemeProvider>
-);
-Themed.args = {
-  ...Default.args,
-};
 export default story;
-
-export { Default, Themed };
