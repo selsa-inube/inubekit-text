@@ -2,7 +2,7 @@ import { inube } from "@inubekit/foundations";
 
 export type AlignOptions = "start" | "center" | "end" | "justify";
 
-export type Appearance = keyof typeof inube.color.text;
+export type Appearance = keyof typeof inube.text;
 
 export type HtmlElements =
   | "h1"
@@ -19,11 +19,9 @@ export type HtmlElements =
 
 export type SizeOptions = "large" | "medium" | "small";
 
-export type TypeOptions = keyof typeof inube.typography;
+export type TypeOptions = "body" | "display" | "label" | "title" | "headline";
 
-const typesOptions = Object.keys(inube.typography);
-
-const parameters = {
+export const parameters = {
   docs: {
     description: {
       component:
@@ -32,7 +30,7 @@ const parameters = {
   },
 };
 
-const props = {
+export const props = {
   textAlign: {
     options: ["start", "center", "end", "justify"],
     control: { type: "select" },
@@ -84,7 +82,7 @@ const props = {
     },
   },
   appearance: {
-    options: Object.keys(inube.color.text),
+    options: Object.keys(inube.text),
     control: { type: "select" },
     description:
       "This prop is used to select one of the color system tokens of the role Text as defined in the Foundations.",
@@ -114,7 +112,7 @@ const props = {
     },
   },
   type: {
-    options: typesOptions,
+    options: ["body", "display", "label", "title", "headline"],
     control: { type: "select" },
     description:
       "This prop is used to select one of the typography roles defined in the Foundations.",
@@ -134,5 +132,3 @@ const props = {
       "This prop allows the component to get and print text in the screen.",
   },
 };
-
-export { props, parameters };
