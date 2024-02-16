@@ -2,41 +2,25 @@ import styled from "styled-components";
 
 import { inube } from "@inubekit/foundations";
 
-const StyledText = styled.p`
-  font-family: ${({ $type, $size, theme }) =>
-    theme?.typography?.[$type]?.[$size]?.font ||
-    inube.typography[$type][$size].font};
-  line-height: ${({ $type, $size }) =>
-    inube.typography[$type][$size].lineHeight};
-  font-size: ${({ $type, $size, theme }) =>
-    theme?.typography?.[$type]?.[$size]?.size ||
-    inube.typography[$type][$size].size};
-  letter-spacing: ${({ $type, $size, theme }) =>
-    theme?.typography?.[$type]?.[$size]?.tracking ||
-    inube.typography[$type][$size].tracking};
-  font-weight: ${({ $type, $size, theme }) =>
-    theme?.typography?.[$type]?.[$size]?.weight ||
-    inube.typography[$type][$size].weight};
+import { typography } from "./typography";
+
+export const StyledText = styled.p`
+  font-family: ${({ theme }) => theme?.font || "Roboto"};
+  line-height: ${({ $type, $size }) => typography[$type][$size].lineHeight};
+  font-size: ${({ $type, $size }) => typography[$type][$size].size};
+  letter-spacing: ${({ $type, $size }) => typography[$type][$size].tracking};
+  font-weight: ${({ $type, $size }) => typography[$type][$size].weight};
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   text-align: ${({ $textAlign }) => $textAlign};
-  color: ${({ $appearance, $disabled, $parentHover, theme }) => {
+  color: ${({ $appearance, $disabled, $parentHover }) => {
     if ($disabled) {
-      return (
-        theme?.color?.text?.[$appearance]?.disabled ||
-        inube.color.text[$appearance].disabled
-      );
+      return inube.text[$appearance].content.color.disabled;
     }
     if ($parentHover) {
-      return (
-        theme?.color?.text?.[$appearance]?.hover ||
-        inube.color.text[$appearance].hover
-      );
+      return inube.text[$appearance].content.color.hover;
     }
-    return (
-      theme?.color?.text?.[$appearance]?.regular ||
-      inube.color.text[$appearance].regular
-    );
+    return inube.text[$appearance].content.color.regular;
   }};
 
   white-space: ${({ $ellipsis }) => $ellipsis && "nowrap"};
@@ -49,9 +33,7 @@ const StyledText = styled.p`
     color: ${({ $appearance, $disabled, $cursorHover, theme }) =>
       $disabled &&
       $cursorHover &&
-      (theme?.color?.text?.[$appearance]?.hover ||
-        inube.color.text[$appearance].hover)};
+      (theme?.text?.[$appearance]?.content?.color?.hover ||
+        inube.text[$appearance].content.color.hover)};
   }
 `;
-
-export { StyledText };
