@@ -1,25 +1,31 @@
 import { inube } from "@inubekit/foundations";
 
-export type AlignOptions = "start" | "center" | "end" | "justify";
+const aligments = ["start", "center", "end", "justify"] as const;
+const htmlElements = [
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "p",
+  "span",
+  "legend",
+  "figcaption",
+  "blockquote",
+] as const;
+const sizes = ["large", "medium", "small"] as const;
+const types = ["body", "display", "label", "title", "headline"] as const;
+
+export type Alignment = (typeof aligments)[number];
 
 export type Appearance = keyof typeof inube.text;
 
-export type HtmlElements =
-  | "h1"
-  | "h2"
-  | "h3"
-  | "h4"
-  | "h5"
-  | "h6"
-  | "p"
-  | "span"
-  | "legend"
-  | "figcaption"
-  | "blockquote";
+export type HtmlElement = (typeof htmlElements)[number];
 
-export type SizeOptions = "large" | "medium" | "small";
+export type Size = (typeof sizes)[number];
 
-export type TypeOptions = "body" | "display" | "label" | "title" | "headline";
+export type Type = (typeof types)[number];
 
 export const parameters = {
   docs: {
@@ -32,7 +38,7 @@ export const parameters = {
 
 export const props = {
   textAlign: {
-    options: ["start", "center", "end", "justify"],
+    options: aligments,
     control: { type: "select" },
     description: "This prop controls the text-align style property.",
     table: {
@@ -54,19 +60,7 @@ export const props = {
     },
   },
   as: {
-    options: [
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "h5",
-      "h6",
-      "p",
-      "span",
-      "legend",
-      "figcaption",
-      "blockquote",
-    ],
+    options: htmlElements,
     control: { type: "select" },
     description:
       "This prop allows us to control the tag that we will inject in the DOM.",
@@ -112,7 +106,7 @@ export const props = {
     },
   },
   type: {
-    options: ["body", "display", "label", "title", "headline"],
+    options: types,
     control: { type: "select" },
     description:
       "This prop is used to select one of the typography roles defined in the Foundations.",
@@ -121,7 +115,7 @@ export const props = {
     },
   },
   size: {
-    options: ["large", "medium", "small"],
+    options: sizes,
     control: { type: "select" },
     description:
       "This prop is used to select one of the typography roles defined in the Foundations.",
