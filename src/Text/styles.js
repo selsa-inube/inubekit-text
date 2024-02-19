@@ -40,7 +40,7 @@ export const StyledText = styled.p`
 
   &:hover {
     color: ${({ $appearance, $disabled, $cursorHover, theme }) =>
-      $disabled &&
+      !$disabled &&
       $cursorHover &&
       (theme?.text?.[$appearance]?.content?.color?.hover ||
         inube.text[$appearance].content.color.hover)};
