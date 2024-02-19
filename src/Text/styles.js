@@ -13,14 +13,23 @@ export const StyledText = styled.p`
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   text-align: ${({ $textAlign }) => $textAlign};
-  color: ${({ $appearance, $disabled, $parentHover }) => {
+  color: ${({ theme, $appearance, $disabled, $parentHover }) => {
     if ($disabled) {
-      return inube.text[$appearance].content.color.disabled;
+      return (
+        theme?.text?.[$appearance]?.content?.color?.disabled ||
+        inube.text[$appearance].content.color.disabled
+      );
     }
     if ($parentHover) {
-      return inube.text[$appearance].content.color.hover;
+      return (
+        theme?.text?.[$appearance]?.content?.color?.hover ||
+        inube.text[$appearance].content.color.hover
+      );
     }
-    return inube.text[$appearance].content.color.regular;
+    return (
+      theme?.text?.[$appearance]?.content?.color?.regular ||
+      inube.text[$appearance].content.color.regular
+    );
   }};
 
   white-space: ${({ $ellipsis }) => $ellipsis && "nowrap"};
