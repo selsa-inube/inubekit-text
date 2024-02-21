@@ -35,7 +35,7 @@
     "postversion": "git push --follow-tags && npm run auto release"
   },
   "dependencies": {
-    "@inubekit/foundations": "^1.2.0"
+    "@inubekit/foundations": "^2.2.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
