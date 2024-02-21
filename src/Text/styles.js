@@ -5,7 +5,7 @@ import { inube } from "@inubekit/foundations";
 import { typography } from "./typography";
 
 export const StyledText = styled.p`
-  font-family: ${({ theme }) => theme?.font || "Roboto"};
+  font-family: ${({ theme }) => theme?.font || "Roboto"}, sans-serif;
   line-height: ${({ $type, $size }) => typography[$type][$size].lineHeight};
   font-size: ${({ $type, $size }) => typography[$type][$size].size};
   letter-spacing: ${({ $type, $size }) => typography[$type][$size].tracking};

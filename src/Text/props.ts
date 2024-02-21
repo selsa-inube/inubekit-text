@@ -16,6 +16,7 @@ const htmlElements = [
 ] as const;
 const sizes = ["large", "medium", "small"] as const;
 const types = ["body", "display", "label", "title", "headline"] as const;
+const appearances = Object.keys(inube.text);
 
 export type Alignment = (typeof aligments)[number];
 
@@ -76,7 +77,7 @@ export const props = {
     },
   },
   appearance: {
-    options: Object.keys(inube.text),
+    options: appearances,
     control: { type: "select" },
     description:
       "This prop is used to select one of the color system tokens of the role Text as defined in the Foundations.",
