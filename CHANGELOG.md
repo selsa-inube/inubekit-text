@@ -1,21 +1,11 @@
-# v2.0.0 (Thu Feb 22 2024)
+# v2.0.1 (Thu Feb 22 2024)
 
-#### 💥 Breaking Change
+#### 📝 Update dependecies
 
-- Implement new version of `@inubekit foundations` [#9](https://github.com/selsa-inube/inubekit-text/pull/9) ([@Andresbl123](https://github.com/Andresbl123) [@cmarin001](https://github.com/cmarin001))
+- Update dependencies
 
-#### 🐛 Bug Fix
+#### Authors: 1
 
-- Adjust dependencies in the distributable [#8](https://github.com/selsa-inube/inubekit-text/pull/8) ([@Andresbl123](https://github.com/Andresbl123))
-- `textAlign` props should not be mandatory in `<Text />` [#7](https://github.com/selsa-inube/inubekit-text/pull/7) ([@Andresbl123](https://github.com/Andresbl123))
-
-#### 📝 Documentation
-
-- Release new version inubekit/text 2.0.0 [#10](https://github.com/selsa-inube/inubekit-text/pull/10) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 2
-
-- Andres ([@Andresbl123](https://github.com/Andresbl123))
 - Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
