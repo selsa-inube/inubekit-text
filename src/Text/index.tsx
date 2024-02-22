@@ -1,23 +1,17 @@
 import { StyledText } from "./styles";
 
-import {
-  AlignOptions,
-  HtmlElements,
-  TypeOptions,
-  SizeOptions,
-  Appearance,
-} from "./props";
+import { Alignment, HtmlElement, Size, Type, Appearance } from "./props";
 
 export interface ITextProps {
   children?: React.ReactNode;
-  textAlign?: AlignOptions;
+  textAlign?: Alignment;
   margin?: string;
   padding?: string;
-  as?: HtmlElements;
+  as?: HtmlElement;
   appearance?: Appearance;
   disabled?: boolean;
-  type?: TypeOptions;
-  size?: SizeOptions;
+  type?: Type;
+  size?: Size;
   cursorHover?: boolean;
   parentHover?: boolean;
   ellipsis?: boolean;

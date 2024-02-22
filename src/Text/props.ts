@@ -1,29 +1,41 @@
-import { inube } from "@inubekit/foundations";
+const aligments = ["start", "center", "end", "justify"] as const;
+const htmlElements = [
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "p",
+  "span",
+  "legend",
+  "figcaption",
+  "blockquote",
+] as const;
+const sizes = ["large", "medium", "small"] as const;
+const types = ["body", "display", "label", "title", "headline"] as const;
+const appearances = [
+  "primary",
+  "success",
+  "warning",
+  "danger",
+  "help",
+  "dark",
+  "gray",
+  "light",
+] as const;
 
-export type AlignOptions = "start" | "center" | "end" | "justify";
+export type Alignment = (typeof aligments)[number];
 
-export type Appearance = keyof typeof inube.color.text;
+export type Appearance = (typeof appearances)[number];
 
-export type HtmlElements =
-  | "h1"
-  | "h2"
-  | "h3"
-  | "h4"
-  | "h5"
-  | "h6"
-  | "p"
-  | "span"
-  | "legend"
-  | "figcaption"
-  | "blockquote";
+export type HtmlElement = (typeof htmlElements)[number];
 
-export type SizeOptions = "large" | "medium" | "small";
+export type Size = (typeof sizes)[number];
 
-export type TypeOptions = keyof typeof inube.typography;
+export type Type = (typeof types)[number];
 
-const typesOptions = Object.keys(inube.typography);
-
-const parameters = {
+export const parameters = {
   docs: {
     description: {
       component:
@@ -32,9 +44,9 @@ const parameters = {
   },
 };
 
-const props = {
+export const props = {
   textAlign: {
-    options: ["start", "center", "end", "justify"],
+    options: aligments,
     control: { type: "select" },
     description: "This prop controls the text-align style property.",
     table: {
@@ -56,19 +68,7 @@ const props = {
     },
   },
   as: {
-    options: [
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "h5",
-      "h6",
-      "p",
-      "span",
-      "legend",
-      "figcaption",
-      "blockquote",
-    ],
+    options: htmlElements,
     control: { type: "select" },
     description:
       "This prop allows us to control the tag that we will inject in the DOM.",
@@ -84,7 +84,7 @@ const props = {
     },
   },
   appearance: {
-    options: Object.keys(inube.color.text),
+    options: appearances,
     control: { type: "select" },
     description:
       "This prop is used to select one of the color system tokens of the role Text as defined in the Foundations.",
@@ -114,7 +114,7 @@ const props = {
     },
   },
   type: {
-    options: typesOptions,
+    options: types,
     control: { type: "select" },
     description:
       "This prop is used to select one of the typography roles defined in the Foundations.",
@@ -123,7 +123,7 @@ const props = {
     },
   },
   size: {
-    options: ["large", "medium", "small"],
+    options: sizes,
     control: { type: "select" },
     description:
       "This prop is used to select one of the typography roles defined in the Foundations.",
@@ -134,5 +134,3 @@ const props = {
       "This prop allows the component to get and print text in the screen.",
   },
 };
-
-export { props, parameters };
