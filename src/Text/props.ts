@@ -1,5 +1,3 @@
-import { inube } from "@inubekit/foundations";
-
 const aligments = ["start", "center", "end", "justify"] as const;
 const htmlElements = [
   "h1",
@@ -16,11 +14,20 @@ const htmlElements = [
 ] as const;
 const sizes = ["large", "medium", "small"] as const;
 const types = ["body", "display", "label", "title", "headline"] as const;
-const appearances = Object.keys(inube.text);
+const appearances = [
+  "primary",
+  "success",
+  "warning",
+  "danger",
+  "help",
+  "dark",
+  "gray",
+  "light",
+] as const;
 
 export type Alignment = (typeof aligments)[number];
 
-export type Appearance = typeof appearances;
+export type Appearance = (typeof appearances)[number];
 
 export type HtmlElement = (typeof htmlElements)[number];
 
