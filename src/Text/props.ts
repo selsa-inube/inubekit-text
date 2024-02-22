@@ -20,7 +20,7 @@ const appearances = Object.keys(inube.text);
 
 export type Alignment = (typeof aligments)[number];
 
-export type Appearance = keyof typeof inube.text;
+export type Appearance = typeof appearances;
 
 export type HtmlElement = (typeof htmlElements)[number];
 
