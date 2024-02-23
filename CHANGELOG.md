@@ -1,3 +1,15 @@
+# v2.0.1 (Thu Feb 22 2024)
+
+#### 📝 Update dependecies
+
+- Update dependencies
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.0.0 (Thu Feb 22 2024)
 
 #### 💥 Breaking Change
