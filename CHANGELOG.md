@@ -1,3 +1,15 @@
+# v2.0.3 (Wed Feb 28 2024)
+
+#### 📝 Update dependecies
+
+- Update dependencies
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.0.2 (Wed Feb 28 2024)
 
 #### 📝 Update dependecies
@@ -7,8 +19,6 @@
 #### Authors: 1
 
 - Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
----
 
 ---
 
