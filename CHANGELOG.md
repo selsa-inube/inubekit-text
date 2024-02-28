@@ -1,8 +1,8 @@
-# (Wed Feb 28 2024)
+# v2.0.3 (Wed Feb 28 2024)
 
-#### 📝 Documentation
+#### 📝 Update dependecies
 
-- Publish new version 2.0.2 [#12](https://github.com/selsa-inube/inubekit-text/pull/12) ([@cmarin001](https://github.com/cmarin001))
+- Update dependencies
 
 #### Authors: 1
 
