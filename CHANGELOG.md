@@ -1,3 +1,9 @@
+# v2.0.2 (Wed Feb 28 2024)
+
+
+
+---
+
 # v2.0.1 (Thu Feb 22 2024)
 
 #### 📝 Update dependecies
