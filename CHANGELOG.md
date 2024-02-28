@@ -1,3 +1,15 @@
+# (Wed Feb 28 2024)
+
+#### 📝 Documentation
+
+- Publish new version 2.0.2 [#12](https://github.com/selsa-inube/inubekit-text/pull/12) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.0.2 (Wed Feb 28 2024)
 
 #### 📝 Update dependecies
@@ -7,8 +19,6 @@
 #### Authors: 1
 
 - Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
----
 
 ---
 
