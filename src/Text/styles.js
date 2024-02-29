@@ -2,14 +2,22 @@ import styled from "styled-components";
 
 import { inube } from "@inubekit/foundations";
 
-import { typography } from "./typography";
-
 export const StyledText = styled.p`
-  font-family: ${({ theme }) => theme?.font || "Roboto"}, sans-serif;
-  line-height: ${({ $type, $size }) => typography[$type][$size].lineHeight};
-  font-size: ${({ $type, $size }) => typography[$type][$size].size};
-  letter-spacing: ${({ $type, $size }) => typography[$type][$size].tracking};
-  font-weight: ${({ $type, $size }) => typography[$type][$size].weight};
+  font-family: ${({ theme }) =>
+      theme?.typography?.[$type]?.[$size]?.font || "Roboto"},
+    sans-serif;
+  line-height: ${({ theme, $type, $size }) =>
+    theme?.typography?.[$type]?.[$size]?.lineHeight ||
+    inube.typography[$type][$size].lineHeight};
+  font-size: ${({ theme, $type, $size }) =>
+    theme?.typography?.[$type]?.[$size]?.size ||
+    inube.typography[$type][$size].size};
+  letter-spacing: ${({ theme, $type, $size }) =>
+    theme?.typography?.[$type]?.[$size]?.tracking ||
+    inube.typography[$type][$size].tracking};
+  font-weight: ${({ theme, $type, $size }) =>
+    theme?.typography?.[$type]?.[$size]?.weight ||
+    inube.typography[$type][$size].weight};
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   text-align: ${({ $textAlign }) => $textAlign};
