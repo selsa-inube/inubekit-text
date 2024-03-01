@@ -6,18 +6,12 @@ export const StyledText = styled.p`
   font-family: ${({ theme }) =>
       theme?.typography?.[$type]?.[$size]?.font || "Roboto"},
     sans-serif;
-  line-height: ${({ theme, $type, $size }) =>
-    theme?.typography?.[$type]?.[$size]?.lineHeight ||
+  line-height: ${({ $type, $size }) =>
     inube.typography[$type][$size].lineHeight};
-  font-size: ${({ theme, $type, $size }) =>
-    theme?.typography?.[$type]?.[$size]?.size ||
-    inube.typography[$type][$size].size};
-  letter-spacing: ${({ theme, $type, $size }) =>
-    theme?.typography?.[$type]?.[$size]?.tracking ||
+  font-size: ${({ $type, $size }) => inube.typography[$type][$size].size};
+  letter-spacing: ${({ $type, $size }) =>
     inube.typography[$type][$size].tracking};
-  font-weight: ${({ theme, $type, $size }) =>
-    theme?.typography?.[$type]?.[$size]?.weight ||
-    inube.typography[$type][$size].weight};
+  font-weight: ${({ $type, $size }) => inube.typography[$type][$size].weight};
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   text-align: ${({ $textAlign }) => $textAlign};
