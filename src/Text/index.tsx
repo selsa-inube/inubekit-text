@@ -1,23 +1,29 @@
 import { StyledText } from "./styles";
 
-import { Alignment, HtmlElement, Size, Type, Appearance } from "./props";
+import {
+  ITextAlignment,
+  ITextHtmlElement,
+  ITextSize,
+  ITextType,
+  ITextAppearance,
+} from "./props";
 
-export interface ITextProps {
+interface IText {
   children?: React.ReactNode;
-  textAlign?: Alignment;
+  textAlign?: ITextAlignment;
   margin?: string;
   padding?: string;
-  as?: HtmlElement;
-  appearance?: Appearance;
+  as?: ITextHtmlElement;
+  appearance?: ITextAppearance;
   disabled?: boolean;
-  type?: Type;
-  size?: Size;
+  type?: ITextType;
+  size?: ITextSize;
   cursorHover?: boolean;
   parentHover?: boolean;
   ellipsis?: boolean;
 }
 
-const Text = (props: ITextProps) => {
+const Text = (props: IText) => {
   const {
     children,
     textAlign = "start",
@@ -53,3 +59,4 @@ const Text = (props: ITextProps) => {
 };
 
 export { Text };
+export type { IText };

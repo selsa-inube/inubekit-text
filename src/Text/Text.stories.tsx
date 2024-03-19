@@ -1,5 +1,5 @@
 import { props, parameters } from "./props";
-import { Text, ITextProps } from ".";
+import { Text, IText } from ".";
 
 const story = {
   title: "data/Text",
@@ -8,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: ITextProps) => {
+const Default = (args: IText) => {
   return <Text {...args}>{args.children}</Text>;
 };
 
@@ -27,4 +27,5 @@ Default.args = {
   parentHover: false,
 };
 
+export { Default };
 export default story;
