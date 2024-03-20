@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { inube } from "@inubekit/foundations";
 
-export const StyledText = styled.p`
+const StyledText = styled.p`
   font-family: ${({ theme }) =>
       theme?.typography?.[$type]?.[$size]?.font || "Roboto"},
     sans-serif;
@@ -48,3 +48,5 @@ export const StyledText = styled.p`
         inube.text[$appearance].content.color.hover)};
   }
 `;
+
+export { StyledText };

@@ -25,17 +25,17 @@ const appearances = [
   "light",
 ] as const;
 
-export type Alignment = (typeof aligments)[number];
+type ITextAlignment = (typeof aligments)[number];
 
-export type Appearance = (typeof appearances)[number];
+type ITextAppearance = (typeof appearances)[number];
 
-export type HtmlElement = (typeof htmlElements)[number];
+type ITextHtmlElement = (typeof htmlElements)[number];
 
-export type Size = (typeof sizes)[number];
+type ITextSize = (typeof sizes)[number];
 
-export type Type = (typeof types)[number];
+type ITextType = (typeof types)[number];
 
-export const parameters = {
+const parameters = {
   docs: {
     description: {
       component:
@@ -44,7 +44,7 @@ export const parameters = {
   },
 };
 
-export const props = {
+const props = {
   textAlign: {
     options: aligments,
     control: { type: "select" },
@@ -83,7 +83,7 @@ export const props = {
       defaultValue: { summary: "false" },
     },
   },
-  appearance: {
+  ITextAppearance: {
     options: appearances,
     control: { type: "select" },
     description:
@@ -122,7 +122,7 @@ export const props = {
       defaultValue: { summary: "bodyLarge" },
     },
   },
-  size: {
+  ITextSize: {
     options: sizes,
     control: { type: "select" },
     description:
@@ -133,4 +133,13 @@ export const props = {
     description:
       "This prop allows the component to get and print text in the screen.",
   },
+};
+
+export { props, parameters };
+export type {
+  ITextAlignment,
+  ITextAppearance,
+  ITextHtmlElement,
+  ITextSize,
+  ITextType,
 };
