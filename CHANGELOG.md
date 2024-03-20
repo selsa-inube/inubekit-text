@@ -1,3 +1,19 @@
+# v2.2.0 (Wed Mar 20 2024)
+
+#### 🚀 Enhancement
+
+- Adjust and export interfaces [#16](https://github.com/selsa-inube/inubekit-text/pull/16) ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Publish new version 2.1.0 [#15](https://github.com/selsa-inube/inubekit-text/pull/15) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.1.0 (Fri Mar 01 2024)
 
 #### 🚀 Enhancement
