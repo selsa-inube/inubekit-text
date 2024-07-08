@@ -2,56 +2,60 @@ import { StyledText } from "./styles";
 
 import {
   ITextAlignment,
+  ITextAppearance,
   ITextHtmlElement,
   ITextSize,
   ITextType,
-  ITextAppearance,
+  ITextWeight,
 } from "./props";
 
 interface IText {
+  appearance?: ITextAppearance;
+  as?: ITextHtmlElement;
   children?: React.ReactNode;
-  textAlign?: ITextAlignment;
+  cursorHover?: boolean;
+  disabled?: boolean;
+  ellipsis?: boolean;
   margin?: string;
   padding?: string;
-  as?: ITextHtmlElement;
-  appearance?: ITextAppearance;
-  disabled?: boolean;
-  type?: ITextType;
-  size?: ITextSize;
-  cursorHover?: boolean;
   parentHover?: boolean;
-  ellipsis?: boolean;
+  size?: ITextSize;
+  textAlign?: ITextAlignment;
+  type?: ITextType;
+  weight?: ITextWeight;
 }
 
 const Text = (props: IText) => {
   const {
+    appearance = "dark",
+    as = "p",
     children,
-    textAlign = "start",
+    cursorHover = false,
+    disabled = false,
+    ellipsis = false,
     margin = "0px",
     padding = "0px",
-    as = "p",
-    appearance = "dark",
-    type = "body",
-    size = "large",
-    cursorHover = false,
     parentHover = false,
-    ellipsis = false,
-    disabled = false,
+    size = "large",
+    textAlign = "start",
+    type = "body",
+    weight = "normal",
   } = props;
 
   return (
     <StyledText
       as={as}
-      $textAlign={textAlign}
       $appearance={appearance}
-      $type={type}
-      $size={size}
+      $cursorHover={cursorHover}
+      $disabled={disabled}
+      $ellipsis={ellipsis}
       $margin={margin}
       $padding={padding}
-      $cursorHover={cursorHover}
       $parentHover={parentHover}
-      $ellipsis={ellipsis}
-      $disabled={disabled}
+      $size={size}
+      $textAlign={textAlign}
+      $type={type}
+      $weight={weight}
     >
       {children}
     </StyledText>
