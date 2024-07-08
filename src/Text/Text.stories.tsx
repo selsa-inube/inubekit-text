@@ -1,5 +1,5 @@
-import { props, parameters } from "./props";
 import { Text, IText } from ".";
+import { parameters, props } from "./props";
 
 const story = {
   title: "data/Text",
@@ -13,18 +13,19 @@ const Default = (args: IText) => {
 };
 
 Default.args = {
-  children: "Title with the Text component",
+  appearance: "dark",
   as: "h1",
-  textAlign: "start",
+  children: "Title with the Text component",
+  cursorHover: true,
+  disabled: false,
+  ellipsis: false,
   margin: "20px 22px 23px 24px",
   padding: "5px",
-  appearance: "dark",
-  type: "body",
-  size: "large",
-  disabled: false,
-  cursorHover: true,
-  ellipsis: false,
   parentHover: false,
+  size: "large",
+  textAlign: "start",
+  type: "body",
+  weight: "normal",
 };
 
 export { Default };

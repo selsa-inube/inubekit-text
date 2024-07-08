@@ -11,7 +11,7 @@ const StyledText = styled.p`
   font-size: ${({ $type, $size }) => inube.typography[$type][$size].size};
   letter-spacing: ${({ $type, $size }) =>
     inube.typography[$type][$size].tracking};
-  font-weight: ${({ $type, $size }) => inube.typography[$type][$size].weight};
+  font-weight: ${({ $weight }) => ($weight === "bold" ? 500 : 400)};
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   text-align: ${({ $textAlign }) => $textAlign};
