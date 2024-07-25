@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
 const StyledText = styled.p`
-  font-family: ${({ theme }) =>
+  font-family: ${({ theme, $type, $size }) =>
       theme?.typography?.[$type]?.[$size]?.font || "Roboto"},
     sans-serif;
   line-height: ${({ $type, $size }) =>
