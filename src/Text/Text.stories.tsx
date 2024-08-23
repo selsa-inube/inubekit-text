@@ -1,5 +1,6 @@
 import { Text, IText } from ".";
 import { parameters, props } from "./props";
+import { action } from "@storybook/addon-actions";
 
 const story = {
   title: "data/Text",
@@ -22,6 +23,7 @@ Default.args = {
   margin: "20px 22px 23px 24px",
   padding: "5px",
   parentHover: false,
+  onClick: action("onClick"),
   size: "large",
   textAlign: "start",
   type: "body",

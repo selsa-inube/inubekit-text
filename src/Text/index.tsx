@@ -19,6 +19,7 @@ interface IText {
   margin?: string;
   padding?: string;
   parentHover?: boolean;
+  onClick?: (event: Event) => void;
   size?: ITextSize;
   textAlign?: ITextAlignment;
   type?: ITextType;
@@ -36,11 +37,21 @@ const Text = (props: IText) => {
     margin = "0px",
     padding = "0px",
     parentHover = false,
+    onClick,
     size = "large",
     textAlign = "start",
     type = "body",
     weight = "normal",
   } = props;
+
+  function handleClick(event: Event) {
+    if (disabled) return;
+    try {
+      onClick && onClick(event);
+    } catch (error) {
+      console.error(`Error when clicking over select. ${error}`);
+    }
+  }
 
   return (
     <StyledText
@@ -52,6 +63,7 @@ const Text = (props: IText) => {
       $margin={margin}
       $padding={padding}
       $parentHover={parentHover}
+      onClick={handleClick}
       $size={size}
       $textAlign={textAlign}
       $type={type}
