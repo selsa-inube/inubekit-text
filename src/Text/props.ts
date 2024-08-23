@@ -107,6 +107,10 @@ const props = {
       defaultValue: { summary: "false" },
     },
   },
+  onClick: {
+    description:
+      "This prop allows us to control what happens when the component is clicked.",
+  },
   size: {
     options: sizes,
     control: { type: "select" },
