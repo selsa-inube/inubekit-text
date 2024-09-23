@@ -7,3 +7,4 @@ export type {
   ITextSize,
   ITextType,
 } from "./Text/props";
+export { tokens as TextTokens } from "./Text/Tokens/tokens";
