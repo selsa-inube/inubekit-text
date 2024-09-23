@@ -1,3 +1,15 @@
+# v2.16.0 (Mon Sep 23 2024)
+
+#### 🚀 Enhancement
+
+- Move text tokens from foundations to component [#33](https://github.com/selsa-inube/inubekit-text/pull/33) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.15.0 (Mon Sep 02 2024)
 
 #### 🚀 Enhancement
