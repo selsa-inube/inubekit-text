@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { tokens } from "./Tokens/tokens";
 import { inube } from "@inubekit/foundations";
 
 const StyledText = styled.p`
@@ -19,18 +19,18 @@ const StyledText = styled.p`
     if ($disabled) {
       return (
         theme?.text?.[$appearance]?.content?.color?.disabled ||
-        inube.text[$appearance].content.color.disabled
+        tokens[$appearance].content.color.disabled
       );
     }
     if ($parentHover) {
       return (
         theme?.text?.[$appearance]?.content?.color?.hover ||
-        inube.text[$appearance].content.color.hover
+        tokens[$appearance].content.color.hover
       );
     }
     return (
       theme?.text?.[$appearance]?.content?.color?.regular ||
-      inube.text[$appearance].content.color.regular
+      tokens[$appearance].content.color.regular
     );
   }};
 
@@ -45,7 +45,7 @@ const StyledText = styled.p`
       !$disabled &&
       $cursorHover &&
       (theme?.text?.[$appearance]?.content?.color?.hover ||
-        inube.text[$appearance].content.color.hover)};
+        tokens[$appearance].content.color.hover)};
   }
 `;
 
