@@ -4,10 +4,6 @@
 
 - Adjust text tokens to change "disabled" modifiers to n90 [#34](https://github.com/selsa-inube/inubekit-text/pull/34) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.16.0 (Mon Sep 23 2024)
@@ -15,10 +11,6 @@
 #### 🚀 Enhancement
 
 - Move text tokens from foundations to component [#33](https://github.com/selsa-inube/inubekit-text/pull/33) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -28,10 +20,6 @@
 
 - Auto-merge PR [#32](https://github.com/selsa-inube/inubekit-text/pull/32) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.14.0 (Mon Sep 02 2024)
@@ -39,10 +27,6 @@
 #### 🚀 Enhancement
 
 - Auto-merge PR [#31](https://github.com/selsa-inube/inubekit-text/pull/31) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -52,10 +36,6 @@
 
 - Auto-merge PR [#30](https://github.com/selsa-inube/inubekit-text/pull/30) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.12.0 (Fri Aug 23 2024)
@@ -63,10 +43,6 @@
 #### 🚀 Enhancement
 
 - Extend `<Text />` Component to Include an `onClick` Prop [#29](https://github.com/selsa-inube/inubekit-text/pull/29) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -76,10 +52,6 @@
 
 - Auto-merge PR [#28](https://github.com/selsa-inube/inubekit-text/pull/28) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.10.0 (Tue Aug 20 2024)
@@ -88,21 +60,11 @@
 
 - Auto-merge PR [#27](https://github.com/selsa-inube/inubekit-text/pull/27) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.9.1 (Mon Aug 05 2024)
 
-#### ⚠️ Pushed to `main`
-
 - Create dispatch-update.yml ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -112,10 +74,6 @@
 
 - Auto-merge PR [#26](https://github.com/selsa-inube/inubekit-text/pull/26) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.8.0 (Fri Aug 02 2024)
@@ -124,21 +82,11 @@
 
 - Auto-merge PR [#25](https://github.com/selsa-inube/inubekit-text/pull/25) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.7.1 (Fri Aug 02 2024)
 
-#### ⚠️ Pushed to `main`
-
 - Create update-foundations.yml ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -148,10 +96,6 @@
 
 - Adjustment in order to remove bug from styles [#24](https://github.com/selsa-inube/inubekit-text/pull/24) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.6.0 (Mon Jul 08 2024)
@@ -159,10 +103,6 @@
 #### 🚀 Enhancement
 
 - Update foundations dependencies [#23](https://github.com/selsa-inube/inubekit-text/pull/23) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -172,10 +112,6 @@
 
 - Extend `<Text />` Component to Include weight Prop [#22](https://github.com/selsa-inube/inubekit-text/pull/22) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.4.0 (Fri Jun 28 2024)
@@ -184,10 +120,6 @@
 
 - Update Project Dependencies [#21](https://github.com/selsa-inube/inubekit-text/pull/21) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.3.0 (Tue Apr 30 2024)
@@ -195,10 +127,6 @@
 #### 🚀 Enhancement
 
 - Update workflow in order to avoid merges with failed builds [#20](https://github.com/selsa-inube/inubekit-text/pull/20) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -216,10 +144,6 @@
 
 - Update inubekit/text to storybook v8 [#18](https://github.com/selsa-inube/inubekit-text/pull/18) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.2.0 (Wed Mar 20 2024)
@@ -231,10 +155,6 @@
 #### 📝 Documentation
 
 - Publish new version 2.1.0 [#15](https://github.com/selsa-inube/inubekit-text/pull/15) ([@cmarin001](https://github.com/cmarin001))
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -248,10 +168,6 @@
 
 - Publish new version 2.0.3 [#13](https://github.com/selsa-inube/inubekit-text/pull/13) ([@cmarin001](https://github.com/cmarin001))
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.0.3 (Wed Feb 28 2024)
@@ -259,10 +175,6 @@
 #### 📝 Update dependecies
 
 - Update dependencies
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -272,10 +184,6 @@
 
 - Update dependencies and scripts according to new directives
 
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-
 ---
 
 # v2.0.1 (Thu Feb 22 2024)
@@ -283,10 +191,6 @@
 #### 📝 Update dependecies
 
 - Update dependencies
-
-#### Authors: 1
-
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -304,7 +208,6 @@
 #### Authors: 2
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
-- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
 
 ---
 
@@ -313,8 +216,6 @@
 #### 🐛 Bug Fix
 
 - Fix errors when implementing `@inubekit/text` [#6](https://github.com/selsa-inube/inubekit-text/pull/6) ([@Andresbl123](https://github.com/Andresbl123))
-
-#### ⚠️ Pushed to `main`
 
 - refactor(Text): update ITextProps interface to make textAlign prop optional (carlos3k11@gmail.com)
 
@@ -331,8 +232,6 @@
 
 - release version with a **TypeScript** support [#5](https://github.com/selsa-inube/inubekit-text/pull/5) ([@Andresbl123](https://github.com/Andresbl123))
 
-#### ⚠️ Pushed to `main`
-
 - build(vite.config.ts): add rollupOption (carlos3k11@gmail.com)
 
 #### Authors: 2
@@ -347,8 +246,6 @@
 #### 🐛 Bug Fix
 
 - publish new version of @inubekit text [#4](https://github.com/selsa-inube/inubekit-text/pull/4) ([@Andresbl123](https://github.com/Andresbl123))
-
-#### ⚠️ Pushed to `main`
 
 - feat(package.json): update dist/index.d.ts to dist/index.es.d.ts (carlos3k11@gmail.com)
 
@@ -366,8 +263,6 @@
 - change style extension to .js [#3](https://github.com/selsa-inube/inubekit-text/pull/3) ([@Andresbl123](https://github.com/Andresbl123))
 - publish `@inubekit/text` package [#2](https://github.com/selsa-inube/inubekit-text/pull/2) ([@Andresbl123](https://github.com/Andresbl123))
 
-#### Authors: 1
-
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
 
 ---
@@ -378,19 +273,13 @@
 
 - implementation of `<Text />` component [#1](https://github.com/selsa-inube/inubekit-text/pull/1) ([@Andresbl123](https://github.com/Andresbl123))
 
-#### ⚠️ Pushed to `main`
-
 - Initial commit ([@Andresbl123](https://github.com/Andresbl123))
-
-#### Authors: 1
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
 
 ---
 
 # v0.0.1 (Wed Jan 17 2024)
-
-#### ⚠️ Pushed to `main`
 
 - feat: gitignore .env ([@wfercanas](https://github.com/wfercanas))
 - feat: scripts, exports and files attributes in package.json ([@wfercanas](https://github.com/wfercanas))
@@ -402,7 +291,5 @@
 - feat: add eslint in pre-commit hook ([@wfercanas](https://github.com/wfercanas))
 - test: prettier format on commit ([@wfercanas](https://github.com/wfercanas))
 - feat: install dependencies ([@wfercanas](https://github.com/wfercanas))
-
-#### Authors: 1
 
 - Fernando Cañas ([@wfercanas](https://github.com/wfercanas))
