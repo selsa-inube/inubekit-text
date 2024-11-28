@@ -146,18 +146,10 @@ You can check the list of tokens in [TOKENS.md](./TOKENS.md)
 
 ### Typography
 
-The personalization of typography is particular inside inubekit since it requires a two step process:
+By default, all components of inubekit are able to use "Roboto" as its fontface. If you want to change this in your app, you have to complete a two step process:
 
-#### Creation of font-faces
-
-1. Each business unit can specify a font to use as its font-face for the whole system. To create a font-face it is necessary to provide an URL where applications can go and GET (download) the font.
-2. There are another couple of attributes that are necessary apart from the URL to download the font. See more information in [@inubekit/foundations](https://www.npmjs.com/package/@inubekit/foundations) docs.
-
-#### Creation of typography tokens
-
-1. Once the font is downloaded when rendering an application, now it make sense to talk about the tokens to handle the font.
-2. Since `<Text />` is not the only component that need texts (think about buttons, links, etc.) we decided to store and publish all default typography tokens in [@inubekit/foundations](https://www.npmjs.com/package/@inubekit/foundations). This enables other components direct access to those tokens.
-3. If you want to change default values for a business unit, you will have to edit the typography slice in the JSON tokens structure for that client like:
+1. Install the new font-face you want to use (if such font-face is not pre-installed in the browser). This installation can be performed by the conventional method of adding link elements in your the index.html document of your app (compilation option) or by dinamically installing the font in runtime. For the second option, check the useFonts() hook exported from [@inubekit/hooks](https://www.npmjs.com/package/@inubekit/hooks).
+2. After installing the font-faces, you can then use them consistently in the whole app. For that, you must edit the typography tokens in the client token structure so that instead of using "Roboto" you can apply the new font. To see the structure of typography tokens you can check [@inubekit/foundations](https://www.npmjs.com/package/@inubekit/foundations). If you change the typography token values, the `<Text />` component will automatically use them to render texts. The same will happen to the rest of components that use the typography tokens as well in their styles definitions.
 
 ```js
 businessUnit = {
