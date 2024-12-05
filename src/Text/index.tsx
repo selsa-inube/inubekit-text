@@ -3,45 +3,45 @@ import { StyledText } from "./styles";
 import {
   ITextAlignment,
   ITextAppearance,
-  ITextHtmlElement,
+  ITextHTMLElement,
   ITextSize,
   ITextType,
   ITextWeight,
 } from "./props";
 
 interface IText {
-  appearance?: ITextAppearance;
-  as?: ITextHtmlElement;
   children?: React.ReactNode;
-  cursorHover?: boolean;
-  disabled?: boolean;
-  ellipsis?: boolean;
+  appearance?: ITextAppearance;
+  as?: ITextHTMLElement;
+  type?: ITextType;
+  size?: ITextSize;
+  weight?: ITextWeight;
   margin?: string;
   padding?: string;
-  parentHover?: boolean;
-  onClick?: (event: Event) => void;
-  size?: ITextSize;
   textAlign?: ITextAlignment;
-  type?: ITextType;
-  weight?: ITextWeight;
+  ellipsis?: boolean;
+  disabled?: boolean;
+  onClick?: (event: Event) => void;
+  parentHover?: boolean;
+  cursorHover?: boolean;
 }
 
 const Text = (props: IText) => {
   const {
+    children,
     appearance = "dark",
     as = "p",
-    children,
-    cursorHover = false,
-    disabled = false,
-    ellipsis = false,
+    type = "body",
+    size = "large",
+    weight = "normal",
     margin = "0px",
     padding = "0px",
-    parentHover = false,
-    onClick,
-    size = "large",
     textAlign = "start",
-    type = "body",
-    weight = "normal",
+    ellipsis = false,
+    disabled = false,
+    onClick,
+    parentHover = false,
+    cursorHover = false,
   } = props;
 
   function handleClick(event: Event) {

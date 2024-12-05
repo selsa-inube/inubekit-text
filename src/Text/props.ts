@@ -28,7 +28,7 @@ const weights = ["normal", "bold"] as const;
 
 type ITextAlignment = (typeof alignments)[number];
 type ITextAppearance = (typeof appearances)[number];
-type ITextHtmlElement = (typeof htmlElements)[number];
+type ITextHTMLElement = (typeof htmlElements)[number];
 type ITextSize = (typeof sizes)[number];
 type ITextType = (typeof types)[number];
 type ITextWeight = (typeof weights)[number];
@@ -149,7 +149,7 @@ export { props, parameters };
 export type {
   ITextAlignment,
   ITextAppearance,
-  ITextHtmlElement,
+  ITextHTMLElement,
   ITextSize,
   ITextType,
   ITextWeight,
